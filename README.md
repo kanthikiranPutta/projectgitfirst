@@ -132,3 +132,26 @@ src/ → Your React code
 App.jsx → Main component
 
 main.jsx → Entry point
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React Tiles Frontend</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './styles.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+
+
